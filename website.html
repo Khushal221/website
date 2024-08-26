@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coca-Cola - Refresh Your World</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: #e4002b;
+            color: white;
+            padding: 20px 10%;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        header img {
+            max-width: 150px;
+        }
+        nav {
+            background: #d1001c;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #f0f0f0;
+        }
+        .hero {
+            background: url('1.webp') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+            padding: 0 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .section h2 {
+            color: #d1001c;
+            margin-top: 0;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .feature-card {
+            background: #f4f4f4;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            flex: 1 1 calc(33% - 40px);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .feature-card:hover {
+            transform: scale(1.05);
+        }
+        .feature-card img {
+            max-width: 100px;
+            margin-bottom: 10px;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            max-width: 600px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #d1001c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact-form button:hover {
+            background-color: #b3001e;
+        }
+        footer {
+            background: #e4002b;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+            }
+            .feature-card {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Coca-Cola Logo">
+        <h1>Refresh Your World with Coca-Cola</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="hero">
+        <h1>Welcome to Coca-Cola</h1>
+    </div>
+    <div class="container">
+        <div id="home" class="section">
+            <h2>Home</h2>
+            <p>Welcome to Coca-Cola, where our mission is to refresh the world and inspire moments of optimism and happiness. Our iconic brand has been a symbol of quality and taste for over a century. Whether you're enjoying a cold Coca-Cola on a hot day or sharing a moment with friends and family, we strive to bring joy and refreshment to every occasion.</p>
+            <p>Explore our wide range of beverages, from the classic Coca-Cola to innovative new products. We are committed to sustainability and are continuously working towards reducing our environmental impact. Learn more about our sustainability efforts and how we are making a difference in communities around the world.</p>
+            <p>Stay connected with us for the latest news, promotions, and updates. Join our community and be part of the refreshing Coca-Cola experience!</p>
+        </div>
+        <div id="about" class="section">
+            <h2>About Us</h2>
+            <p>Coca-Cola was invented in 1886 by Dr. John Stith Pemberton, and since then, it has grown to become one of the most recognized brands in the world. Our company is dedicated to providing high-quality beverages that are enjoyed by people from all walks of life. We are proud of our rich heritage and the role we play in bringing people together.</p>
+            <p>Our values are rooted in integrity, accountability, and a commitment to excellence. We focus on innovation and quality to meet the evolving needs of our consumers. Through our diverse product portfolio, we aim to offer something for everyone, from classic soft drinks to healthy alternatives.</p>
+            <p>At Coca-Cola, we believe in giving back to the communities we serve. Our charitable initiatives and partnerships with various organizations help support important causes and create positive change. We are committed to making a meaningful impact through our sustainability programs and community outreach efforts.</p>
+        </div>
+        <div id="features" class="section">
+            <h2>Our Features</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <img src="iconic.jpg" alt="Feature 1">
+                    <h3>Iconic Taste</h3>
+                    <p>Experience the unique flavor that has been loved for generations. Our classic Coca-Cola taste is a timeless favorite that never goes out of style.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="refresh.jpg" alt="Feature 2">
+                    <h3>Refreshing Quality</h3>
+                    <p>Enjoy the crisp and refreshing quality of our beverages. Each sip is crafted to deliver the perfect balance of flavor and satisfaction.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="global.jpg" alt="Feature 3">
+                    <h3>Global Reach</h3>
+                    <p>Find Coca-Cola in over 200 countries around the world. Our global presence ensures that you can enjoy our products no matter where you are.</p>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="section">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Coca-Cola Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
